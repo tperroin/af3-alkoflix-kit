@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kit Arctic Fuse 3 + alkoFlix</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+         background: #111316; color: #e6e8eb; line-height: 1.6; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -.02em; }
+  p.sub { color: #9aa3ad; margin: 0 0 32px; }
+  h2 { font-size: 1.05rem; margin: 36px 0 12px; text-transform: uppercase;
+       letter-spacing: .08em; color: #8fb4ff; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { border: 1px solid #262b31; border-radius: 10px; padding: 14px 16px;
+       margin-bottom: 10px; background: #161a1f; display: flex;
+       justify-content: space-between; gap: 16px; align-items: baseline; }
+  a { color: #8fb4ff; text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  .meta { color: #7d8794; font-size: .85rem; white-space: nowrap; }
+  ol { padding-left: 20px; }
+  code { background: #1d2228; padding: 2px 6px; border-radius: 5px; font-size: .9em; }
+  .note { border-left: 3px solid #8fb4ff; padding: 12px 16px; background: #161a1f;
+          border-radius: 0 10px 10px 0; color: #c3cbd5; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Kit Arctic Fuse 3 + alkoFlix</h1>
+  <p class="sub">Configuration « super Netflix » : hubs, widgets et styles (Stack / Ranked / Flyer).</p>
+
+  <h2>1. Dépôts à installer</h2>
+  <ul>
+    <li><a href="repository.jurialmunkey-3.6.zip">repository.jurialmunkey-3.6.zip</a><span class="meta">skin Arctic Fuse 3</span></li>
+    <li><a href="repository.alkoflix-1.0.1.zip">repository.alkoflix-1.0.1.zip</a><span class="meta">alkoFlix</span></li>
+    <li><a href="resource.images.alkodicons.coal-1.0.3.zip">resource.images.alkodicons.coal-1.0.3.zip</a><span class="meta">icônes (optionnel)</span></li>
+  </ul>
+
+  <h2>2. Configuration du skin</h2>
+  <ul>
+    <li><a href="AF3-config.zip">AF3-config.zip</a><span class="meta">à restaurer avec l'addon Backup</span></li>
+  </ul>
+
+  <h2>Procédure</h2>
+  <ol>
+    <li>Kodi 21 installé.</li>
+    <li>Paramètres &gt; Extensions &gt; <em>Installer depuis un fichier zip</em> : les deux dépôts.</li>
+    <li>Installer <strong>Arctic Fuse 3</strong> depuis le dépôt jurialmunkey, puis l'activer.</li>
+    <li>Installer <strong>alkoFlix</strong> depuis son dépôt, puis connecter Trakt et le débrideur.</li>
+    <li>Installer l'addon <strong>Backup</strong> (dépôt Kodi officiel &gt; Programmes).</li>
+    <li>Backup &gt; <em>Restaurer</em> &gt; choisir <code>AF3-config.zip</code> &gt; cocher <strong>addon_data</strong>.</li>
+    <li>Kodi redémarre : les widgets se reconstruisent tout seuls.</li>
+  </ol>
+
+  <p class="note">Ne copie jamais le dossier <code>plugin.video.alkoflix</code> d'un appareil à l'autre :
+  reconnecte Trakt et le débrideur sur chaque appareil.</p>
+</main>
+</body>
+</html>
